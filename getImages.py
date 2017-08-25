@@ -5,30 +5,18 @@ import os, sys, shutil
 
 def fromAddress(folder):
     # Locate and validate directory to copy from.
+    print(folder)
+    return(folder)
 
-    if(folder == os.path.exists(folder)):   # make sure destination exsists
-        if(folder == os.path.isdir(folder)):    # make sure destination is a directory
-            if(folder == os.path.abspath(folder)):    # make sure directory is absolute
-                return(folder)
-            else:
-                print("Directory is not absolute!")
-        else:
-            print("Destination is not a directory!")
-    else:
-        print("No such directory.")
     
 def toAddress(folder):
     # Locate or create directory to copy to.
     
     # Check if directory exsists - if not, then create it
     if(folder == os.path.exists(folder)):   # make sure destination exsists
-        if(folder == os.path.isdir(folder)): # make sure destination is a directory
-            if(folder == os.path.abspath(folder)):    # make sure directory is absolute
-                return(folder)
-            else:
-                print("Directory is not absolute!")
-        else:
-            print("Destination is not a directory!")
+        print(folder)
+        return(folder)
+
     else:
         # Create new folder
         print('\nCreating %s...' % (folder))
