@@ -33,9 +33,9 @@ def walkAndCopy(fromFolder, toFolder):
         # Copy all the image files in this folder to the new folder.
         for filename in filenames:
             shutil.copy(filename, toFolder)
-
     print('\nDone.')
 
 fromA = fromAddress(str(input("Copy From? ")))
 toA = toAddress(str(input("Copy to? ")))
+
 walkAndCopy(fromA, toA)
